@@ -1,70 +1,53 @@
-# heart-disease-prediction
-## Overview
-This project provides a pipeline for predicting the likelihood of heart disease using machine learning. It demonstrates data handling, preprocessing, model building, training, and prediction. The workflow is suitable for health analytics, research, and educational demonstration.
-## Dataset
-Source: [kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
-- Features:
-    - age
-    - sex
-    - cp
-    - trestbps
-    - chol
-    - fbs
-    - restecg
-    - thalach
-    - exang
-    - oldpeak
-    - slope
-    - ca
-    - thal
-- Target: target (0:No, 1:Yes).
-## Technologies & Libraries Used
-- Python 
-- Pandas & NumPy
-- Matplotlib & Seaborn
-- Scikit-learn
-- XGBoost
-## Machine Learning Models
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
-- XGB Classifier
-## Evaluation Metrics
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-## Visualization
-- Pairplots show feature distributions and inter-class separations.
-- Confusion matrices illustrate per-class prediction accuracy.
-## Project Workflow
-1. Data Collection:
-   - Load the iheart disease prediction dataset
+# Heart Disease Prediction
 
-2. Data Preprocessing:
-   - data.head()
-   - Handle missing values
-   - Split into training and testing sets
-   - Balance the dataset
+## 📌 Project Overview
+This project focuses on predicting the presence of heart disease in patients using machine learning techniques. Early prediction of heart disease can assist healthcare professionals in taking preventive measures.
 
-3. Feature Scaling:
-   - Standardize features for better model performance
+---
 
-4. Model Training:
-   - Logistic Regression
-   - Decision Tree Classifier
-   - Random Forest Classifier
-   - XGB Classifier 
+## 📖 Problem Statement
+Build a machine learning model to predict whether a patient is at risk of heart disease based on medical attributes.
 
-5. Model Evaluation:
-   - accuracy
-   - precision
-   - recall
-   - f1-score
-   - confusion matrix
-  
-## Result
+---
+
+## 📊 Dataset
+- Medical dataset containing patient health records  
+- Features include:
+  - Age
+  - Blood pressure
+  - Cholesterol levels
+  - Heart rate
+  - Other clinical indicators  
+- Binary classification problem (disease / no disease)
+
+---
+
+## 🛠️ Approach
+The following steps were implemented:
+
+- Data preprocessing and cleaning  
+- Feature selection and analysis  
+- Training supervised learning models such as:
+  - Logistic Regression
+  - Random Forest (if applicable)  
+- Model evaluation using appropriate classification metrics  
+
+---
+
+## 📈 Model Evaluation
+Model performance was evaluated using:
+- Accuracy  
+- Sensitivity (Recall)  
+- Confusion matrix  
+
+These metrics help assess the model’s effectiveness in identifying patients with heart disease.
+
+---
+
+## 📊 Results
+- Developed models capable of predicting heart disease risk with reliable performance  
+- Feature selection improved interpretability and model efficiency  
+#
 
               precision    recall  f1-score   support
 
@@ -75,5 +58,28 @@ Source: [kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-datas
     macro avg      0.99      0.99      0.99       205
     weighted avg   0.99      0.99      0.99       205
 
-## Conclusion
-This project illustrates that machine learning algorithms can well predict the risk of heart disease from patient health information. Through meticulous preprocessing of the data, feature engineering, and testing different classifiers—Logistic Regression, Decision Trees, Random Forests, and XGBoost—we obtained good predictive performance with accuracy, precision, recall, and F1-scores all around 0.99 on the test set.
+
+---
+
+## 🧰 Tools & Technologies
+- Python  
+- Pandas  
+- NumPy  
+- scikit-learn  
+
+---
+
+## 🚀 Future Improvements
+- Experiment with ensemble models  
+- Improve feature engineering  
+- Deploy the model as a healthcare screening tool  
+
+---
+
+## 📌 Conclusion
+This project demonstrates how machine learning can be applied to healthcare data to support early disease prediction and decision-making.
+
+---
+
+## 📎 Repository Link
+[Heart Disease Prediction](https://github.com/praveenakula9/heart-disease-prediction)
